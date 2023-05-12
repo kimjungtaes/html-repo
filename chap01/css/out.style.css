@@ -1,0 +1,30 @@
+
+hr#underline{
+    margin-top: 3em; 
+    width: 500px; 
+     margin-left: 0px; 
+     color: rgb(233, 34, 34); 
+     height: 10px; 
+     background-color: rgba(17,172 ,55 , 1 ); 
+}
+
+ p#p{
+    width: 300px; height: 300px; border: 1px solid black;
+ }
+
+ span#span{
+    color: blue;
+ }
+
+ img{
+    height: 100px; width: 100px;
+ }
+ span#span1{
+    font-size: 2em;
+    font-weight: bold;
+ }
+
+ image_mirelogo{
+    width: 200px;
+ }
+
