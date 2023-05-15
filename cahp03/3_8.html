@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>버튼을 만들자</h1>
+    <hr />
+    <form action="server.php" method="get">
+      검색: <input type="text" name="search" />
+      <input type="button" value="Q1" />
+      <button type="button">Q2</button> <br />
+      submit button: <input type="submit" value="submit1" />
+      <button type="submit">submit2</button> <br />
+      reset button: <input type="reset" value="reser1" />
+      <button type="reset">reset2</button> <br />
+      image button :
+      <input type="image" src="./image/button.png" alt="크롬버튼 이미지" />
+      <button>
+        <img src="./image/button.png" alt="크롬버튼이미지" />
+      </button>
+      <hr />
+      <label for="check1"> 짜장면</label>
+      <input type="checkbox" name="check1" value="1" id="check1" />
+
+      <label for="check2">짬뽕 </label>
+      <input type="checkbox" name="check2" value="2" checked id="check2" />
+
+      <label for="check3">탕수육</label>
+      <input type="checkbox" name="check3" value="3" id="check3" />
+      <hr />
+
+      <label
+        >짜장면 <input type="radio" name="radio_food" value="1" />
+        <img
+          src="./image/jajang.png"
+          alt="자장면 그림"
+          style="width: 30px"
+          height="30px"
+      /></label>
+
+      <label
+        >짬뽕 <input type="radio" name="radio_food" value="2" checked />
+        <img
+          src="./image/jjambbong.png"
+          alt="짬뽕 그림"
+          style="width: 30px"
+          height="30px"
+      /></label>
+
+      <label
+        >탕수육 <input type="radio" name="radio_food" value="3" />
+        <img
+          src="./image/tangsuyuk.png"
+          alt="탕수육 그림"
+          style="width: 30px"
+          height="30px"
+      /></label>
+    </form>
+  </body>
+</html>

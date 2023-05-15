@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        text-align: center;
+        border: 1px solid black;
+        margin-top: 10px;
+        padding: 10px;
+      }
+      form {
+        width: 30%;
+        margin: auto;
+      }
+      td {
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <hr />
+    <form>
+      <fieldset>
+        <legend style="color: blue">로그인</legend>
+        <table>
+          <tr>
+            <td>아이디 <input type="text" name="ID" /></td>
+            <td>비밀번호 <input type="password" name="password" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend style="color: blue">회원가입</legend>
+        <table>
+          <tr>
+            <td>아이디* <input type="text" name="id" /></td>
+          </tr>
+          <tr>
+            <td>비밀번호* <input type="password" name="password" /></td>
+          </tr>
+          <tr>
+            <td>
+              비밀번호확인* <input type="passwordcheck" name="passwordcheck" />
+            </td>
+          </tr>
+          <tr>
+            <td>이름* <input type="text" name="name" /></td>
+          </tr>
+          <tr>
+            <td>메일주소* <input type="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td>전화번호 <input type="number" name="number" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend style="color: blue">텍스트 입력창</legend>
+        <textarea rows="4" cols="90">텍스트 입력창 입니다</textarea>
+      </fieldset>
+      <div>
+        <button type="submit">가입하기</button>
+        <button type="submit">다시쓰기</button>
+      </div>
+    </form>
+  </body>
+</html>
