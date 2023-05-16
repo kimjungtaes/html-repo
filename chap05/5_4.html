@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px dotted black;
+        width: 90px;
+        height: 300px;
+        position: relative;
+      }
+      div img {
+        width: 100px;
+        height: 150px;
+        position: absolute;
+      }
+      div > img#card1 {
+        top: 20px;
+        left: 20px;
+        z-index: 10;
+      }
+      div > img#card2 {
+        top: 40px;
+        left: 40px;
+        z-index: 9;
+      }
+      div > img#card3 {
+        top: 60px;
+        left: 60px;
+        z-index: 8;
+      }
+      div > img#card4 {
+        top: 80px;
+        left: 80px;
+        z-index: 7;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>z-index property</h1>
+    <hr />
+    <div>
+      <img src="./img/spade-A.png" alt="spade-A" id="card1" />
+      <img src="./img/spade-2.png" alt="spade-2" id="card2" />
+      <img src="./img/spade-3.png" alt="spade-3" id="card3" />
+      <img src="./img/spade-7.png" alt="spade-7" id="card4" />
+    </div>
+  </body>
+</html>

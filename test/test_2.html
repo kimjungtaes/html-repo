@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        border: 1px solid black;
+        text-align: center;
+        background-color: thistle;
+        position: relative;
+        margin: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      ul > li {
+        display: inline-block;
+        list-style: none;
+        padding: 10px;
+      }
+      ul > li > a {
+        text-decoration: none;
+        color: palevioletred;
+      }
+      ul > li > a:hover {
+        color: red;
+      }
+      ul > li#move {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      ul > li#move1 {
+        position: absolute;
+        right: 5%;
+        top: 0;
+      }
+      ul > li#move2 {
+        position: absolute;
+        right: 10%;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CAFE MENU</h1>
+    <hr />
+    <div>
+      <ul>
+        <li><a href="Expresso">Expresso</a></li>
+        <li><a href="Latte">Latte</a></li>
+        <li><a href="GeapeAde">GeapeAde</a></li>
+        <li><a href="LemonAde">LemonAde</a></li>
+        <li><a href="Americano">Americano</a></li>
+        <li id="move"><a href="cake">cake</a></li>
+        <li id="move1"><a href="fruit">fruit</a></li>
+        <li id="move2"><a href="juice">juice</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
