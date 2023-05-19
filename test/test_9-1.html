@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>new onject로 사용자 객체 만들기</h1> <hr>");
+      let obj = {
+        account: "황기태",
+        code: 111,
+        balance: 35000,
+        search: function () {
+          return this.balance;
+        },
+        deposit: function (money) {
+          this.balance += money;
+        },
+        withdraw: function (money) {
+          this.balance -= money;
+        },
+      };
+      document.write(`account: ${obj.account}, code: ${obj.code},
+        balance: ${obj.balance} <br>`);
+      obj.deposit(10000);
+      document.write(`10000원 저금 후 잔액은 : ${obj.balance} <br>`);
+      obj.withdraw(5000);
+      document.write(`5000원 인출 후 잔액은 : ${obj.balance}`);
+    </script>
+  </body>
+</html>

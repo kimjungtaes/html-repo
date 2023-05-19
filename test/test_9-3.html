@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>new Object로 사용자 객체만들기</h1> <hr>");
+      class Obj {
+        constructor(account, code, balance) {
+          this.account = account;
+          this.code = code;
+          this.balance = balance;
+        }
+        search() {
+          return this.balance;
+        }
+        deposit(money) {
+          this.balance += money;
+        }
+        withdraw(money) {
+          this.balance -= money;
+        }
+      }
+      let obj = new Obj("황기태", 1111, 30000);
+      document.write(
+        `account: ${obj.account}, code: ${obj.code}, balance: ${obj.balance} <br>`
+      );
+      obj.deposit(10000);
+      document.write(`10000원 저금후 잔액은 : ${obj.balance} <br>`);
+      obj.withdraw(5000);
+      document.write(`5000원 인출후 잔액은 : ${obj.balance} `);
+    </script>
+  </body>
+</html>
