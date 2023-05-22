@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/13.js" defer></script>
+    <script>
+      function noAction(e) {
+        e.preventDegault();
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <h1>이벤트의 디폴트 행동 취소</h1>
+    <hr />
+    <a href="http://www.naver.com" onclick="return asd()">
+      네이버로 이동할지 물어보는 링크</a
+    >
+    <hr />
+    <form>
+      <input type="checkbox" />빵<br />
+      <input type="checkbox" id="kk" onclick="noAction(event)" />술
+    </form>
+  </body>
+</html>
