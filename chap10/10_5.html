@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        //객체타입선언
+        const select = document.querySelector("select");
+        const button = document.querySelector("input[type=button]");
+        //이벤트 리스너 등록 및 핸들러 처리
+        button.addEventListener("click", () => {
+          let locationvalue = select.options[select.selectedIndex].value;
+          window.location = locationvalue;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>window.location으로 웹 사이트 접속</h1>
+    <hr />
+    <form action="">
+      <label for="site">사이트 선택</label>
+      <select name="" id="site">
+        <option value="http://www.naver.com">네이버</option>
+        <option value="http://www.daum.net">다음</option>
+        <option value="http://www.nate.com">네이트</option>
+      </select>
+      <br />
+      <input type="button" value="웹사이트 접속" />
+    </form>
+  </body>
+</html>
